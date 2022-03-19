@@ -5,14 +5,14 @@ public class Auto {
     int precio;
     Array[] asientos;
     String marca;
-    test.Motor motor;
+    Motor motor;
     int registro;
     static int cantindadCreados;
 
     int cantidadAsientos(){
         int total = 0;
 
-        for (test.Asiento i; i<this.asientos.size(); i++){
+        for (Asiento i; i<this.asientos.size(); i++){
             if (i != null){
                 total++;
             }
@@ -20,7 +20,7 @@ public class Auto {
         return total;
     }
     String verificarInteridad(){
-        for (test.Asiento u; u<this.asientos.size(); u++){
+        for (Asiento u; u<this.asientos.size(); u++){
             if (this.registro != u.registro && this.registro != this.motor.registro){
                 return "Las piezas no son originales";
             } else {
